@@ -8,17 +8,17 @@ export default new Vuex.Store({
     slides: []
   },
   getters: {
-    slides (state) {
+    slides(state) {
       return state.slides
     }
   },
   mutations: {
-    SET_SLIDES (state, slides) {
+    SET_SLIDES(state, slides) {
       state.slides = slides
     }
   },
   actions: {
-    fetchSlides ({ commit }) {
+    fetchSlides({ commit }) {
       commit('SET_SLIDES', [
         {
           alt: 'image 1',
@@ -26,11 +26,11 @@ export default new Vuex.Store({
         },
         {
           alt: 'image 2',
-          url: 'project_details_photo.jpg'
+          url: 'project_details_photo2.jpg'
         },
         {
           alt: 'image 3',
-          url: 'project_details_photo.jpg'
+          url: 'project_details_photo2.jpg'
         }
       ])
     }
